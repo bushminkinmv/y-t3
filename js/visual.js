@@ -79,7 +79,7 @@ Visualizer.prototype = {
     },
     stop: function() {
 		if(this.source != null)
-			this.source.stop();
+			this.source.stop(0);
     },
 	setEQ: function(type) {
 		gains = [];
