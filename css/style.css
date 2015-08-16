@@ -2,24 +2,25 @@
 
 
 .main-body {
-	width: 550px;
-	height: 270px;
-	background-color: #4CAF50;
-	margin: 0 auto;
+    width: 1000px;
+    height: 390px;
+    background-color: #B2EBF2;
+    margin: 0 auto;
     margin-top: 80px;
     font-family: Roboto;
 }
 
 .dragndrop {
-	width: 530px;
+	width: 150px;
     height: 65px;
-    border: 2px solid #00E676;
+    border: 2px solid #4DD0E1;
     position: relative;
     bottom: 63px;
-    left: 8px;
+    left: 6px;
     color: #FAFAFA;
     font-family: Roboto;
     text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;
 }
 
 .dragndrop_invite {
@@ -35,10 +36,10 @@
 
 .upload-button {
 	display: block;
-    width:150px;
-    padding:7px 13px;
-    text-align:center;
-    background:#a2bb33;
+    width: 150px;
+    padding: 7px 13px;
+    text-align: center;
+    background-color: #00ACC1;
     font-size:20px;
     font-family: Roboto;
     color:#ffffff;
@@ -47,6 +48,8 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;
+    border-radius: 2px;
 }
 
 .upload-button:active {
@@ -63,10 +66,10 @@
 
 .play-button {
 	display: block;
-    width:150px;
-    padding:7px 13px;
-    text-align:center;
-    background:#a2bb33;
+    width: 150px;
+    padding: 7px 13px;
+    text-align: center;
+    background-color: #00ACC1;
     font-size:20px;
     font-family: Roboto;
     color:#ffffff;
@@ -75,6 +78,8 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;
+    border-radius: 2px;
 }
 
 .play-button:active {
@@ -91,10 +96,10 @@
 
 .stop-button {
 	display: block;
-    width:150px;
-    padding:7px 13px;
-    text-align:center;
-    background:#a2bb33;
+    width: 150px;
+    padding: 7px 13px;
+    text-align: center;
+    background-color: #00ACC1;
     font-size:20px;
     font-family: Roboto;
     color:#ffffff;
@@ -103,6 +108,8 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;
+    border-radius: 2px;
 }
 
 .stop-button:active {
@@ -111,12 +118,15 @@
 }
 
 .track-name {
-    border: 1px solid #00E676;
-    height: 20px;
-    width: 340px;
+        border: 1px solid #4DD0E1;
+    background-color: rgba(77, 208, 225, 0.23);
+    height: 50px;
+    width: 480px;
     position: relative;
     left: 200px;
-    bottom: 84px;
+    bottom: 91px;
+    border-radius: 2px;
+    padding-top: 12px;
 }
 
 .visual {
@@ -124,7 +134,7 @@
     width: 340px;
     position: relative;
     left: 200px;
-    bottom: 74px;
+    bottom: 124px;
 }
 
 .file-input {
@@ -142,13 +152,13 @@
 	cursor: pointer;
 	opacity: 0;
 	display: block;
-	width: 530px;
-	height: 64px;
+	width: 150px;
+	height: 65px;
 	z-index: 1;
 }
 
 .dragndrop:hover {
-	border: 2px dashed #00E676;
+	border: 2px dashed #4DD0E1;
 }
 
 .dnd-span {
@@ -158,6 +168,60 @@
 }
 
 .track-name-align {
-	margin-left: 5px;
+    margin-left: 5px;
+    text-overflow: ellipsis;
+    height: 40px;
+    width: 480px;
+    overflow: hidden;
 }
 
+.eq-container {
+    position: relative;
+    bottom: 220px;
+    left: 800px;
+}
+
+.eq {
+    display: block;
+    width: 150px;
+    padding: 7px 13px;
+    text-align: center;
+    background-color: #00ACC1;
+    font-size:20px;
+    font-family: Roboto;
+    color:#ffffff;
+    white-space: nowrap;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+.tag-artist {
+    border: 1px solid #4DD0E1;
+    background-color: rgba(77, 208, 225, 0.23);
+    height: 22px;
+    width: 300px;
+    position: relative;
+    left: 690px;
+    border-radius: 2px;
+    bottom: 584px;
+    padding-left: 2px;
+    overflow: hidden;
+}
+
+.tag-title {
+    border: 1px solid #4DD0E1;
+    background-color: rgba(77, 208, 225, 0.23);
+    height: 22px;
+    width: 300px;
+    position: relative;
+    left: 690px;
+    border-radius: 2px;
+    bottom: 568px;
+    padding-left: 2px;
+    overflow: hidden;
+}

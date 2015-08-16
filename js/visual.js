@@ -42,6 +42,7 @@ Visualizer.prototype = {
 		});
     },
     start: function(file) {
+        this.status = 1;
         this.file = file;
         //read and decode the file into audio array buffer 
         var fr = new FileReader(),
@@ -70,6 +71,9 @@ Visualizer.prototype = {
         fr.readAsArrayBuffer(this.file);
     },
     play: function() {
+        if(this.status === 1)
+            return;
+
         if(this.file != null)
             this.start(this.file);
     },
@@ -143,13 +147,13 @@ Visualizer.prototype = {
             gap = 2, //gap between meters
             capHeight = 2,
             capStyle = '#fff',
-            meterNum = 100 / (10 + 2), //count of the meters
+            meterNum = 700 / (10 + 2), //count of the meters
             capYPositionArray = []; ////store the vertical position of hte caps for the preivous frame
         ctx = canvas.getContext('2d'),
         gradient = ctx.createLinearGradient(0, 0, 0, 300);
-        gradient.addColorStop(1, '#0f0');
-        gradient.addColorStop(0.5, '#ff0');
-        gradient.addColorStop(0, '#f00');
+        gradient.addColorStop(1, '#FFE0B2');
+        gradient.addColorStop(0.7, '#FFA726');
+        gradient.addColorStop(0, '#E65100');
         var drawMeter = function() {
             var array = new Uint8Array(analyser.frequencyBinCount);
             analyser.getByteFrequencyData(array);
