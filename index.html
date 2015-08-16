@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <title>WebAudio API player</title>
+</head>
+<body>
+    <!-- + code -->
+    <div class="main-container">
+      <div class="main-body">
+<div class="eq">rock</div><div class="eq">pop</div><div class="eq">classic</div><div class="eq">normal</div><div class="eq">jazz</div>
+        <div class="play">
+          <div class="play-button">play</div> 
+        </div>
+
+        <div class="stop">
+          <div class="stop-button">stop</div> 
+        </div>
+
+        <div class="upload">
+          <div class="upload-button">Choose a file</div> 
+        </div>
+
+        <div class="track-name">
+          
+        </div>
+
+        <div class="visual">
+          <canvas id="spectrum" width="340px" height="320px"></canvas>  
+        </div>
+
+        
+
+        <div class="dragndrop">
+          <input id='f' class="dnd-input" type='file' accept="audio/*" />
+          <div class="dnd-span">
+            <span>Drag your file here</span>    
+          </div> 
+        </div>  
+      </div>
+      <div class="file-input">
+        <audio id="audio_player"></audio>  
+      </div>
+    </div>
+    
+
+    
+    <!-- - code -->
+	
+	<!-- + scripts -->
+    <script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+	<script type="text/javascript" src="js/id3-minimized.js"></script>
+    <script type="text/javascript" src="js/visual.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+	<!-- - scripts -->
+</body>
+</html>

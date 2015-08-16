@@ -1,0 +1,163 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+
+.main-body {
+	width: 550px;
+	height: 270px;
+	background-color: #4CAF50;
+	margin: 0 auto;
+    margin-top: 80px;
+    font-family: Roboto;
+}
+
+.dragndrop {
+	width: 530px;
+    height: 65px;
+    border: 2px solid #00E676;
+    position: relative;
+    bottom: 63px;
+    left: 8px;
+    color: #FAFAFA;
+    font-family: Roboto;
+    text-align: center;
+}
+
+.dragndrop_invite {
+	margin-top: 24px;
+}
+
+.upload {
+	position: relative;
+    top: 70px;
+    left: 8px;
+    cursor: pointer;
+}
+
+.upload-button {
+	display: block;
+    width:150px;
+    padding:7px 13px;
+    text-align:center;
+    background:#a2bb33;
+    font-size:20px;
+    font-family: Roboto;
+    color:#ffffff;
+    white-space: nowrap;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    text-decoration: none;
+}
+
+.upload-button:active {
+    vertical-align: top;
+    padding: 8px 13px 6px;
+}
+
+.play {
+	position: relative;
+    top: 30px;
+    left: 8px;
+    cursor: pointer;
+}
+
+.play-button {
+	display: block;
+    width:150px;
+    padding:7px 13px;
+    text-align:center;
+    background:#a2bb33;
+    font-size:20px;
+    font-family: Roboto;
+    color:#ffffff;
+    white-space: nowrap;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    text-decoration: none;
+}
+
+.play-button:active {
+    vertical-align: top;
+    padding: 8px 13px 6px;
+}
+
+.stop {
+	position: relative;
+    top: 50px;
+    left: 8px;
+    cursor: pointer;
+}
+
+.stop-button {
+	display: block;
+    width:150px;
+    padding:7px 13px;
+    text-align:center;
+    background:#a2bb33;
+    font-size:20px;
+    font-family: Roboto;
+    color:#ffffff;
+    white-space: nowrap;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    text-decoration: none;
+}
+
+.stop-button:active {
+    vertical-align: top;
+    padding: 8px 13px 6px;
+}
+
+.track-name {
+    border: 1px solid #00E676;
+    height: 20px;
+    width: 340px;
+    position: relative;
+    left: 200px;
+    bottom: 84px;
+}
+
+.visual {
+    height: 120px;
+    width: 340px;
+    position: relative;
+    left: 200px;
+    bottom: 74px;
+}
+
+.file-input {
+	visibility: hidden;
+}
+
+.dnd-input {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	-ms-filter: 'alpha(opacity=0)';
+	font-size: 200px;
+	direction: ltr;
+	cursor: pointer;
+	opacity: 0;
+	display: block;
+	width: 530px;
+	height: 64px;
+	z-index: 1;
+}
+
+.dragndrop:hover {
+	border: 2px dashed #00E676;
+}
+
+.dnd-span {
+	position: relative;
+	top: 23px;
+	z-index: 0;
+}
+
+.track-name-align {
+	margin-left: 5px;
+}
+
