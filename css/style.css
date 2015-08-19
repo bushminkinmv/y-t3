@@ -1,13 +1,18 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 
+html {
+    background-image: url("../img/shattered.png");
+}
 
 .main-body {
     width: 1000px;
-    height: 390px;
+    height: 410px;
     background-color: #B2EBF2;
     margin: 0 auto;
     margin-top: 80px;
     font-family: Roboto;
+    box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;
+    border-radius: 2px;
 }
 
 .dragndrop {
@@ -177,8 +182,14 @@
 
 .eq-container {
     position: relative;
-    bottom: 220px;
-    left: 800px;
+    bottom: 260px;
+    left: 750px;
+    border: 1px solid #4DD0E1;
+    background-color: rgba(77, 208, 225, 0.23);
+    width: 150px;
+    height: 232px;
+    padding: 20px;
+    border-radius: 2px;
 }
 
 .eq {
@@ -208,7 +219,7 @@
     position: relative;
     left: 690px;
     border-radius: 2px;
-    bottom: 584px;
+    bottom: 618px;
     padding-left: 2px;
     overflow: hidden;
 }
@@ -221,7 +232,7 @@
     position: relative;
     left: 690px;
     border-radius: 2px;
-    bottom: 568px;
+    bottom: 602px;
     padding-left: 2px;
     overflow: hidden;
 }
